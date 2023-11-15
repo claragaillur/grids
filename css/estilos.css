@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.contenedor {
+    /*height: 500px;*/
+    background-color: #739260;
+    
+   
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas: 
+    "img1 img2 img3 img3"
+    "img1 img4 img5 img6"
+    "img7 img4 img8 img8";
+    padding: 40px;
+    grid-gap: 15px;
+}
+.item {
+    border: 1px solid white;
+    border-radius: 7px;
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.item:hover  {
+    transform: scale(1.20);
+}
+.item1 {
+    grid-area: img1;
+    background-image:url(../imagenes/relleno.jpg)
+  
+}
+.item2 {
+    grid-area: img2;
+    background-image:url(../imagenes/sorrentinos1.jpg)
+}
+.item3 {
+    grid-area: img3;
+    background-image: url(../imagenes/frida.jpg);
+}
+.item4 {
+    grid-area: img4;
+    background-image: url(../imagenes/sorrentinos.jpg);
+}
+.item5 {
+    grid-area: img5;
+    background-image: url(../imagenes/raviolones.jpg);
+    
+}
+.item6 {
+    grid-area: img6;
+    background-image: url(../imagenes/mesa.jpg);
+}
+.item7 {
+    grid-area: img7;
+    background-image: url(../imagenes/mesa1.jpg);
+}
+.item8 {
+    grid-area: img8;
+    background-image: url(../imagenes/frida1.jpg);
+}
